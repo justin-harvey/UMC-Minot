@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Event Calendar - United Methodist Church of Minot, Maine</title>
+    <meta name="description" content="View upcoming events, worship services, and activities at United Methodist Church of Minot, Maine.">
+    <meta name="keywords" content="church calendar, events, worship services, United Methodist Church, Minot Maine">
+    <link rel="canonical" href="https://umcminot.org/calendar.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UMC Minot">
+    <meta property="og:title" content="Event Calendar - United Methodist Church of Minot, Maine">
+    <meta property="og:description" content="View upcoming events, worship services, and activities at United Methodist Church of Minot, Maine.">
+    <meta property="og:url" content="https://umcminot.org/calendar.html">
+    <meta property="og:image" content="https://umcminot.org/images/minot+umc.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Brand Design Tokens -->
+    <link rel="stylesheet" href="brand-tokens.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e4002b">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <div class="logo-text-container">
+                        <span class="logo-text-main">Minot</span>
+                        <span class="logo-text-sub">United Methodist Church</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#worship" class="nav-link">Worship</a>
+                <a href="index.html#connect" class="nav-link">Connect</a>
+                <a href="index.html#serve" class="nav-link">Serve</a>
+                <a href="index.html#resources" class="nav-link">Resources</a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Event Calendar</h1>
+                <p class="lead">Stay connected with upcoming worship services, events, and activities</p>
+            </div>
+        </section>
+
+        <!-- Calendar Content -->
+        <section class="calendar-content">
+            <div class="container">
+                <!-- Calendar Actions -->
+                <div class="calendar-actions">
+                    <h2>Subscribe to Our Calendar</h2>
+                    <p>Never miss an event! Add our church calendar to your personal calendar app.</p>
+
+                    <div class="subscribe-buttons">
+                        <a href="https://calendar.google.com/calendar/u/0?cid=ZWQ4OTU2YzFhODgyY2JkY2NlNDFhZWMxMmIyZWIzZTYyOWEzYjczZjAyOTE2NDFkMzQxNGVhNDRhOGE1ZjJjNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            <i class="fab fa-google"></i>
+                            Subscribe with Google Calendar
+                        </a>
+                        <a href="invite.ics"
+                           download="UMC-Minot-Calendar.ics"
+                           class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download ICS File
+                        </a>
+                    </div>
+
+                    <div class="calendar-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>The ICS file can be imported into Apple Calendar, Outlook, or any calendar app that supports the ICS format.</p>
+                    </div>
+                </div>
+
+                <!-- Embedded Google Calendar -->
+                <div class="calendar-embed-container">
+                    <h2>Upcoming Events</h2>
+                    <div class="calendar-wrapper">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&src=ZWQ4OTU2YzFhODgyY2JkY2NlNDFhZWMxMmIyZWIzZTYyOWEzYjczZjAyOTE2NDFkMzQxNGVhNDRhOGE1ZjJjNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+                                style="border-width:0"
+                                width="100%"
+                                height="600"
+                                frameborder="0"
+                                scrolling="no"
+                                title="United Methodist Church of Minot Event Calendar"></iframe>
+                    </div>
+                </div>
+
+                <!-- Regular Events Info -->
+                <div class="regular-events">
+                    <h2>Regular Schedule</h2>
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <h3>Sunday Worship</h3>
+                            <p class="event-time">Every Sunday at 10:00 AM</p>
+                            <p>Join us for inspiring worship, meaningful messages, and warm fellowship.</p>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-praying-hands"></i>
+                            </div>
+                            <h3>Prayer Meeting</h3>
+                            <p class="event-time">Check calendar for details</p>
+                            <p>Gather with others for prayer, support, and spiritual growth.</p>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-book-bible"></i>
+                            </div>
+                            <h3>Bible Study</h3>
+                            <p class="event-time">Check calendar for details</p>
+                            <p>Dive deeper into scripture with guided study and discussion.</p>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Community Service</h3>
+                            <p class="event-time">Various times</p>
+                            <p>Opportunities to serve our community and share God's love.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact CTA -->
+                <div class="calendar-cta">
+                    <h2>Questions About an Event?</h2>
+                    <p>Contact us for more information about any of our events or activities.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+12077839097" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Call (207) 783-9097
+                        </a>
+                        <a href="mailto:minotumc@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/screenshot 2024-11-04 at 8.58.12 pm.png" alt="Minot United Methodist Church tree logo" class="footer-logo-img" width="60" height="60" onerror="this.style.display='none';">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-main">Minot UMC</span>
+                            <span class="footer-logo-tagline">Growing in Faith Together</span>
+                        </div>
+                    </div>
+                    <p><em>Open Hearts, Open Minds, Open Doors</em></p>
+                    <div class="social-links" role="group" aria-label="Social media links">
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday Worship: <time datetime="10:00">10:00 AM</time></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 142 Minot Ave<br>Minot, ME 04258</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+12077839097">(207) 783-9097</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:minotumc@gmail.com">minotumc@gmail.com</a></p>
+                    </address>
+                </div>
+
+                <nav class="footer-section" aria-label="Footer navigation">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#worship">Worship</a></li>
+                        <li><a href="index.html#connect">Connect</a></li>
+                        <li><a href="index.html#serve">Serve</a></li>
+                        <li><a href="index.html#resources">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> United Methodist Church of Minot, Maine. All rights reserved.</p>
+                <p>Built with love for our community ♥</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Update current year dynamically -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Inline styles for page-specific content -->
+    <style>
+        .page-header {
+            padding: calc(var(--nav-height) + 4rem) 0 4rem;
+            background: linear-gradient(135deg, rgba(228, 0, 43, 0.95) 0%, rgba(212, 175, 55, 0.95) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        .page-header .lead {
+            color: white;
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .calendar-content {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .calendar-actions {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 2.5rem;
+            background: var(--gradient-subtle);
+            border-radius: var(--border-radius-large);
+        }
+
+        .calendar-actions h2 {
+            color: var(--brand-deep-purple);
+            margin-bottom: 1rem;
+        }
+
+        .calendar-actions > p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--brand-neutral-cool);
+        }
+
+        .subscribe-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .subscribe-buttons .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .calendar-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: rgba(228, 0, 43, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--brand-crimson);
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .calendar-note i {
+            font-size: 1.5rem;
+            color: var(--brand-crimson);
+            margin-top: 0.25rem;
+        }
+
+        .calendar-note p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .calendar-embed-container {
+            max-width: 1000px;
+            margin: 0 auto 4rem;
+        }
+
+        .calendar-embed-container h2 {
+            text-align: center;
+            color: var(--brand-deep-purple);
+            margin-bottom: 2rem;
+        }
+
+        .calendar-wrapper {
+            border-radius: var(--border-radius-large);
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            background: white;
+        }
+
+        .calendar-wrapper iframe {
+            display: block;
+        }
+
+        .regular-events {
+            max-width: 1000px;
+            margin: 0 auto 4rem;
+        }
+
+        .regular-events h2 {
+            text-align: center;
+            color: var(--brand-deep-purple);
+            margin-bottom: 3rem;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background: var(--gradient-subtle);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 1px solid rgba(228, 0, 43, 0.1);
+            transition: all var(--transition-medium);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+            border-color: rgba(228, 0, 43, 0.2);
+        }
+
+        .event-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-flame);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .event-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .event-card h3 {
+            color: var(--brand-deep-purple);
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .event-time {
+            color: var(--brand-crimson);
+            font-weight: 600;
+            margin-bottom: 1rem !important;
+            font-size: 1rem;
+        }
+
+        .event-card p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .calendar-cta {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: var(--gradient-subtle);
+            border-radius: var(--border-radius-large);
+        }
+
+        .calendar-cta h2 {
+            color: var(--brand-deep-purple);
+            margin-bottom: 1rem;
+        }
+
+        .calendar-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .calendar-actions,
+            .calendar-cta {
+                padding: 2rem 1.5rem;
+            }
+
+            .subscribe-buttons,
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .calendar-wrapper iframe {
+                height: 500px;
+            }
+        }
+
+        /* Footer text visibility fixes */
+        .footer address,
+        .footer address p,
+        .footer address a,
+        .footer p,
+        .footer li,
+        .footer-section p {
+            color: #ffffff !important;
+        }
+
+        .footer address a:hover {
+            color: var(--brand-crimson) !important;
+        }
+    </style>
+</body>
+</html>

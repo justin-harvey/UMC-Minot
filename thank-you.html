@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - United Methodist Church of Minot, Maine</title>
+    <meta name="description" content="Thank you for your prayer request submission to UMC Minot.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="brand-tokens.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <style>
+        .thank-you-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(204, 122, 0, 0.1) 0%, rgba(90, 75, 107, 0.1) 100%);
+            padding: 2rem;
+        }
+
+        .thank-you-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .thank-you-icon {
+            font-size: 4rem;
+            color: var(--brand-orange-accessible);
+            margin-bottom: 1.5rem;
+        }
+
+        .thank-you-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--brand-purple-accessible);
+            margin-bottom: 1rem;
+        }
+
+        .thank-you-message {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .return-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--brand-orange-accessible) 0%, var(--brand-purple-accessible) 100%);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(204, 122, 0, 0.3);
+        }
+
+        .return-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(204, 122, 0, 0.4);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-card {
+                padding: 2rem;
+                margin: 1rem;
+            }
+
+            .thank-you-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-card">
+            <i class="fas fa-heart thank-you-icon" aria-hidden="true"></i>
+
+            <h1 class="thank-you-title">Thank You</h1>
+
+            <p class="thank-you-message">
+                Your prayer request has been received. Our pastoral team and prayer ministry will lift you up in prayer.
+                May you find comfort and strength in knowing that our church community is praying for you.
+            </p>
+
+            <p class="thank-you-message">
+                <strong>"Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours."</strong><br>
+                <em>- Mark 11:24</em>
+            </p>
+
+            <a href="/" class="return-button">
+                <i class="fas fa-home" aria-hidden="true"></i>
+                Return to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Auto-redirect after 10 seconds -->
+    <script>
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 10000);
+    </script>
+</body>
+</html>

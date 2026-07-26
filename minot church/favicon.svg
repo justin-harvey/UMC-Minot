@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e4002b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="white" stroke="url(#crossGradient)" stroke-width="2"/>
+
+  <!-- Methodist Cross -->
+  <path d="M16 4 L16 28 M8 16 L24 16" stroke="url(#crossGradient)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Flame -->
+  <path d="M16 6 Q18 8 18 11 Q18 13 16 14 Q14 13 14 11 Q14 8 16 6 Z" fill="url(#crossGradient)"/>
+</svg>

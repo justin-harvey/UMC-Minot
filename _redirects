@@ -1,0 +1,23 @@
+# Clean URL redirects
+/home               /           301
+/index.html         /           301
+
+# Consolidate onto the canonical domain (HTTPS + custom domain)
+http://umc-minot.netlify.app/*   https://umcminot.org/:splat  301!
+https://umc-minot.netlify.app/*  https://umcminot.org/:splat  301!
+
+# Common church page redirects
+/about-us           /#about     302
+/services           /#worship   302
+/contact-us         /#contact   302
+/events             /#connect   302
+/volunteer          /#serve     302
+
+# Legacy redirects (if migrating from another site)
+/pastor             /#about     302
+/worship-times      /#worship   302
+/ministries         /#connect   302
+/giving             /#serve     302
+
+# 404 handling - serve index.html for all unmatched routes (SPA behavior)
+/*                  /index.html 200
