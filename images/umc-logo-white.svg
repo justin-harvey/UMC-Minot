@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="whiteLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cross and Flame Symbol -->
+  <g transform="translate(5, 5)">
+    <!-- Cross -->
+    <path d="M25 5 L25 45 M10 25 L40 25"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="round"/>
+
+    <!-- Flame -->
+    <path d="M25 8
+             Q30 12 30 18
+             Q30 22 28 25
+             Q26 28 25 30
+             Q24 28 22 25
+             Q20 22 20 18
+             Q20 12 25 8 Z"
+          fill="url(#whiteLogoGradient)"/>
+
+    <!-- Inner flame highlight -->
+    <path d="M25 12
+             Q27 14 27 17
+             Q27 19 25 21
+             Q23 19 23 17
+             Q23 14 25 12 Z"
+          fill="rgba(255, 255, 255, 0.7)"/>
+  </g>
+
+  <!-- Church Name Text -->
+  <g transform="translate(60, 0)">
+    <!-- UMC -->
+    <text x="0" y="25"
+          font-family="Changa One, cursive"
+          font-size="20"
+          font-weight="400"
+          fill="white">UMC</text>
+
+    <!-- Minot -->
+    <text x="0" y="45"
+          font-family="Work Sans, sans-serif"
+          font-size="16"
+          font-weight="600"
+          fill="white">Minot</text>
+
+    <!-- Tagline -->
+    <text x="0" y="57"
+          font-family="Work Sans, sans-serif"
+          font-size="8"
+          font-weight="400"
+          fill="rgba(255, 255, 255, 0.8)">Open Hearts • Open Minds • Open Doors</text>
+  </g>
+</svg>
