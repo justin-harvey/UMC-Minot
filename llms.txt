@@ -21,10 +21,10 @@ Worship blends traditional and contemporary music with meaningful prayer and a s
 
 ## Pages
 
-- [Home](https://umcminot.org/): Welcome, worship times, about, and church history
-- [Event Calendar](https://umcminot.org/calendar.html): Upcoming worship services, events, and activities
-- [Bible Study](https://umcminot.org/bible-study.html): Devotionals and study guides for spiritual growth
-- [Pastoral Care & Prayer](https://umcminot.org/pastoral-care.html): Prayer requests, pastoral support, and the Prayer Wall
+- [Home](https://umc-minot-maine.netlify.app/): Welcome, worship times, about, and church history
+- [Event Calendar](https://umc-minot-maine.netlify.app/calendar.html): Upcoming worship services, events, and activities
+- [Bible Study](https://umc-minot-maine.netlify.app/bible-study.html): Devotionals and study guides for spiritual growth
+- [Pastoral Care & Prayer](https://umc-minot-maine.netlify.app/pastoral-care.html): Prayer requests, pastoral support, and the Prayer Wall
 
 ## Serving Area
 

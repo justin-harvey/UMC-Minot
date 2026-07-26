@@ -1,6 +1,6 @@
 # GEO + SEO Report — United Methodist Church of Minot
 
-**Site:** https://umcminot.org (confirmed live)
+**Site:** https://umc-minot-maine.netlify.app (confirmed live)
 **Date:** 2026-07-26
 **Scope:** GEO (AI-search visibility) + traditional SEO for the static Netlify site
 
@@ -14,9 +14,11 @@
       case-sensitive hosting. Now match the real lowercase filenames.
 - [x] **Broken social-preview image fixed** — `og:image` pointed to a nonexistent
       `church-hero.jpg`; now uses the real `minot+umc.jpg`.
-- [x] **Domain consolidated to `umcminot.org`** in canonical tags, Open Graph, sitemap,
-      robots.txt, and redirects. The old `umc-minot.netlify.app` now 301-redirects to the
-      custom domain (stops duplicate-content splitting).
+- [x] **Domain standardized to `umc-minot-maine.netlify.app`** (the actual live URL) across
+      canonical tags, Open Graph, sitemap, and robots.txt. Removed the earlier cross-domain
+      redirects that pointed at an unconfigured custom domain (would have broken the site).
+- [x] **Broken asset references fixed** — footer logo (hidden U+202F space in filename) renamed
+      to `footer-logo.png`; dead `favicon.ico` links removed (SVG favicon remains).
 - [x] **Schema data errors corrected** — `email` was literally `"PENDING"`; `foundingDate`
       was `1870` (contradicting the site's own 1835 history); event date was a stale 2024.
 - [x] **Invalid `netlify.toml` fixed** — had a duplicate `[build]` table that can break
@@ -51,9 +53,9 @@
 - [ ] **Claim/verify Google Business Profile** for the church.
       *Why:* #1 driver of "church near me" + Google Maps discovery for a local church.
       *Effort:* ~30 min. https://business.google.com — search the address, claim it,
-      add hours (Sun 10:00–11:15), photos, phone, and the umcminot.org link.
-- [ ] **Set up Google Search Console** and verify `umcminot.org`.
-      *Then:* submit `https://umcminot.org/sitemap.xml` and use "Request Indexing" on the
+      add hours (Sun 10:00–11:15), photos, phone, and the umc-minot-maine.netlify.app link.
+- [ ] **Set up Google Search Console** and verify `umc-minot-maine.netlify.app`.
+      *Then:* submit `https://umc-minot-maine.netlify.app/sitemap.xml` and use "Request Indexing" on the
       homepage. *Why:* turns passive/slow discovery into days, and shows what queries you
       appear for. https://search.google.com/search-console
 - [ ] **Set up Bing Webmaster Tools** (feeds ChatGPT + Copilot search).
@@ -65,12 +67,12 @@
 - [x] **Exact map coordinates applied** — `44.0851445, -70.3191671` set in the two
       `geo.position`/`ICBM` meta tags and the JSON-LD `geo` block in `index.html`.
 - [ ] **Test the structured data** at https://search.google.com/test/rich-results —
-      paste the live umcminot.org URL; should show Church + FAQ with no errors.
+      paste the live umc-minot-maine.netlify.app URL; should show Church + FAQ with no errors.
 - [ ] **Test the social preview** at https://www.opengraph.xyz — confirm the image shows.
 
 ### 🥉 Priority 3 — Content & authority (steady, ongoing)
 - [ ] **Get listed in the Maine UMC conference / New England Conference church directory**
-      with a link to umcminot.org. *Why:* a trusted, topical backlink — strong AI + SEO signal.
+      with a link to umc-minot-maine.netlify.app. *Why:* a trusted, topical backlink — strong AI + SEO signal.
 - [ ] **Community listings:** town of Minot site, local Facebook community groups,
       church-finder sites (e.g., UMC.org "Find-A-Church", church directories).
       Keep the name, address, phone **identical** everywhere (NAP consistency).
@@ -84,10 +86,10 @@
       `frame-src https://padlet.com https://calendar.google.com;` (and `https:` to
       `img-src`) in `netlify.toml` so the Padlet prayer wall and Google Calendar iframes
       render. *Verify on the live site after deploy.*
-- [ ] **Add PWA icon/screenshot images** referenced in `manifest.json`
-      (`icon-192.png`, `icon-512.png`, `screenshot-desktop.png`, `screenshot-mobile.png`)
-      — they're declared but the files don't exist. Not SEO-critical, but cleans up console
-      errors and enables "install app."
+- [x] **PWA icons + screenshots generated** — `icon-192.png`, `icon-512.png`,
+      `screenshot-desktop.png`, `screenshot-mobile.png` created and added to `images/`
+      (were declared in `manifest.json` but missing). Enables "install app" and clears
+      console errors.
 - [ ] **Fix dead in-page links** — a few "Learn More" / "Listen Now" buttons on the
       homepage point to `href="#"` (Small Groups, Online Sermons). Point them at real
       destinations or remove.
@@ -101,9 +103,9 @@
 |------|--------|
 | `index.html` | OG image, geo meta, preconnect, image case fixes, enriched Church schema, new FAQ schema + section, removed social links |
 | `calendar.html` / `bible-study.html` / `pastoral-care.html` | Canonical + OG tags, footer logo image fix |
-| `sitemap.xml` | Real page URLs, umcminot.org, current dates |
-| `robots.txt` | umcminot.org, explicit AI-crawler allows |
+| `sitemap.xml` | Real page URLs, umc-minot-maine.netlify.app, current dates |
+| `robots.txt` | umc-minot-maine.netlify.app, explicit AI-crawler allows |
 | `llms.txt` | **New file** — AI content guide |
-| `netlify.toml` | Domain redirects, duplicate `[build]` table fix |
-| `_redirects` | Netlify subdomain → umcminot.org |
+| `netlify.toml` | Duplicate `[build]` table fix, CSP `frame-src` for embeds, removed dead cross-domain redirects |
+| `_redirects` | Removed dead cross-domain redirects (kept clean-URL + SPA rules) |
 | `styles.css` | FAQ section styling appended |

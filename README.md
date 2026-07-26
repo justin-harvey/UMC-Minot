@@ -3,7 +3,7 @@
 The official website for the **United Methodist Church of Minot, Maine**.
 *Open Hearts, Open Minds, Open Doors.*
 
-🌐 **Live site:** [umcminot.org](https://umcminot.org)
+🌐 **Live site:** [umc-minot-maine.netlify.app](https://umc-minot-maine.netlify.app)
 
 A fast, accessible, mobile-first static site — no build step, no framework. Built with
 plain HTML, CSS, and JavaScript, and deployed on Netlify.

@@ -1,7 +1,7 @@
 # Google Business Profile Setup — United Methodist Church of Minot
 
 **Goal:** Get the church to appear on Google Maps and in "church near me" searches, with
-correct hours, photos, and a link to umcminot.org. This is the single biggest step for
+correct hours, photos, and a link to umc-minot-maine.netlify.app. This is the single biggest step for
 local + AI-search discovery. It's **free** and takes about 30–45 minutes, plus a short
 wait for verification.
 
@@ -20,7 +20,7 @@ Name / Address / Phone ("NAP").
 | **Address** | 142 Minot Ave, Minot, ME 04258 |
 | **Map pin (lat, long)** | 44.0851445, -70.3191671 |
 | **Phone** | (207) 783-9097 |
-| **Website** | https://umcminot.org |
+| **Website** | https://umc-minot-maine.netlify.app |
 | **Hours** | Sunday 10:00 AM – 11:15 AM (worship service) |
 | **Email (for verification/contact)** | minotumc@gmail.com |
 
@@ -60,7 +60,7 @@ Name / Address / Phone ("NAP").
 
 ### 5. Add contact info
 - Phone: **(207) 783-9097**
-- Website: **https://umcminot.org**
+- Website: **https://umc-minot-maine.netlify.app**
 
 ### 6. Verify the business
 Google will offer one or more methods (which ones appear depend on the listing):
@@ -101,7 +101,7 @@ A "complete" profile ranks better and gives AI assistants more to cite:
 
 ## After GBP: the next two off-site steps
 1. **Google Search Console** — https://search.google.com/search-console
-   Verify `umcminot.org`, submit `https://umcminot.org/sitemap.xml`, click "Request
+   Verify `umc-minot-maine.netlify.app`, submit `https://umc-minot-maine.netlify.app/sitemap.xml`, click "Request
    Indexing" on the homepage.
 2. **Bing Webmaster Tools** — https://www.bing.com/webmasters
    Import from Search Console (feeds ChatGPT and Copilot search).

@@ -42,5 +42,5 @@ Disallow: /_redirects
 Disallow: /netlify.toml
 
 # Discovery files
-Sitemap: https://umcminot.org/sitemap.xml
-# AI content guide: https://umcminot.org/llms.txt
+Sitemap: https://umc-minot-maine.netlify.app/sitemap.xml
+# AI content guide: https://umc-minot-maine.netlify.app/llms.txt

@@ -19,19 +19,6 @@
   to = "/"
   status = 301
 
-# Consolidate onto the canonical domain (HTTPS + custom domain)
-[[redirects]]
-  from = "http://umc-minot.netlify.app/*"
-  to = "https://umcminot.org/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://umc-minot.netlify.app/*"
-  to = "https://umcminot.org/:splat"
-  status = 301
-  force = true
-
 # 404 page
 [[redirects]]
   from = "/*"

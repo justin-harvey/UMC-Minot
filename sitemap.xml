@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://umcminot.org/</loc>
+        <loc>https://umc-minot-maine.netlify.app/</loc>
         <lastmod>2026-07-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://umcminot.org/calendar.html</loc>
+        <loc>https://umc-minot-maine.netlify.app/calendar.html</loc>
         <lastmod>2026-07-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://umcminot.org/bible-study.html</loc>
+        <loc>https://umc-minot-maine.netlify.app/bible-study.html</loc>
         <lastmod>2026-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://umcminot.org/pastoral-care.html</loc>
+        <loc>https://umc-minot-maine.netlify.app/pastoral-care.html</loc>
         <lastmod>2026-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

@@ -2,10 +2,6 @@
 /home               /           301
 /index.html         /           301
 
-# Consolidate onto the canonical domain (HTTPS + custom domain)
-http://umc-minot.netlify.app/*   https://umcminot.org/:splat  301!
-https://umc-minot.netlify.app/*  https://umcminot.org/:splat  301!
-
 # Common church page redirects
 /about-us           /#about     302
 /services           /#worship   302
