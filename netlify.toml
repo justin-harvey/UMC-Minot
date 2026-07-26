@@ -78,20 +78,7 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Plugin configuration
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-  package = "netlify-plugin-lighthouse"
-
-  [plugins.inputs]
-  results_dir = "lighthouse"
-
-  [[plugins.inputs.audits]]
-  url = "/"
-  output_path = "reports/homepage.html"
-
-  [[plugins.inputs.audits]]
-  url = "/index.html"
-  output_path = "reports/index.html"
+# NOTE: Build plugins (@netlify/plugin-sitemap, netlify-plugin-lighthouse) were
+# removed — they were declared here but never installed, which failed every build
+# and left the site stuck on an old deploy. This is a no-build static site with a
+# hand-written sitemap.xml, so neither plugin is needed.
