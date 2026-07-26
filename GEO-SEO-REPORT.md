@@ -6,7 +6,15 @@
 
 ---
 
-## ✅ COMPLETED (already applied to the files)
+## ✅ COMPLETED (applied, pushed, and verified live)
+
+### 🚨 Root-cause fix — why nothing was deploying
+- [x] **Removed uninstalled Netlify build plugins** (`@netlify/plugin-sitemap`,
+      `netlify-plugin-lighthouse`). They were declared in `netlify.toml` but never installed,
+      so **every Netlify build failed** ("Plugins must be installed…") and the live site was
+      frozen on an old deploy — no change could go live. Removing them fixed the pipeline; the
+      site now builds and deploys on every push to `main`. **All fixes below are now live** at
+      https://umc-minot-maine.netlify.app.
 
 ### Critical fixes — were actively hurting the site
 - [x] **Broken carousel + footer images fixed** across all 4 pages. References used wrong
@@ -62,8 +70,9 @@
       Can import directly from Google Search Console. https://www.bing.com/webmasters
 
 ### 🥈 Priority 2 — Verify my automated changes render correctly
-- [ ] **Deploy and eyeball the live homepage** — confirm the carousel images and footer
-      logo now load (they were broken), and the new FAQ section looks right.
+- [x] **Deployed and verified live** — build now succeeds; canonical, FAQ section, fixed
+      footer logo, corrected image paths, `llms.txt`, and PWA icons all confirmed serving
+      correctly on umc-minot-maine.netlify.app.
 - [x] **Exact map coordinates applied** — `44.0851445, -70.3191671` set in the two
       `geo.position`/`ICBM` meta tags and the JSON-LD `geo` block in `index.html`.
 - [ ] **Test the structured data** at https://search.google.com/test/rich-results —
@@ -90,6 +99,13 @@
       `screenshot-desktop.png`, `screenshot-mobile.png` created and added to `images/`
       (were declared in `manifest.json` but missing). Enables "install app" and clears
       console errors.
+- [ ] **Fix the soft-404 catch-all** — `_redirects` / `netlify.toml` has `/* → /index.html 200`,
+      so every missing/typo'd URL returns the homepage with HTTP 200 instead of a real 404.
+      Bad for SEO (search engines see infinite duplicate "pages"). For a static multi-page
+      site, replace with a real 404 page (`/* /404.html 404`). *Ask me to apply this.*
+- [ ] **Compress large images** — `images/img_0469.jpeg` is ~5.3 MB (way too big for web);
+      others are large too. Resize to ~1600px wide and re-save at ~80% quality to cut page
+      weight dramatically and improve Core Web Vitals. *Ask me and I'll batch-optimize them.*
 - [ ] **Fix dead in-page links** — a few "Learn More" / "Listen Now" buttons on the
       homepage point to `href="#"` (Small Groups, Online Sermons). Point them at real
       destinations or remove.
@@ -106,6 +122,6 @@
 | `sitemap.xml` | Real page URLs, umc-minot-maine.netlify.app, current dates |
 | `robots.txt` | umc-minot-maine.netlify.app, explicit AI-crawler allows |
 | `llms.txt` | **New file** — AI content guide |
-| `netlify.toml` | Duplicate `[build]` table fix, CSP `frame-src` for embeds, removed dead cross-domain redirects |
+| `netlify.toml` | **Removed uninstalled build plugins (fixed failing deploys)**, duplicate `[build]` table fix, CSP `frame-src` for embeds, removed dead cross-domain redirects |
 | `_redirects` | Removed dead cross-domain redirects (kept clean-URL + SPA rules) |
 | `styles.css` | FAQ section styling appended |
