@@ -66,7 +66,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const headerOffset = 70;
+            const navbar = document.getElementById('navbar');
+            const headerOffset = navbar ? navbar.getBoundingClientRect().bottom : 70;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -76,6 +77,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+// Dismissible Christmas Fair Announcement Banner
+document.addEventListener('DOMContentLoaded', function() {
+    const announcementBar = document.getElementById('announcement-bar');
+    const announcementClose = document.getElementById('announcement-bar-close');
+
+    if (announcementBar && announcementClose) {
+        if (sessionStorage.getItem('announcementDismissed') === 'true') {
+            document.body.classList.add('announcement-dismissed');
+        }
+
+        announcementClose.addEventListener('click', function() {
+            document.body.classList.add('announcement-dismissed');
+            sessionStorage.setItem('announcementDismissed', 'true');
+        });
+    }
 });
 
 // Active Navigation Link Highlighting
