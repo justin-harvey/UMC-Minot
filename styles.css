@@ -279,7 +279,7 @@ p {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 0;
+    top: var(--announcement-height, 0);
     width: 100%;
     background: var(--glass-white);
     backdrop-filter: blur(15px) saturate(180%);
@@ -2120,5 +2120,93 @@ p {
     .event-promo-image {
         max-width: 320px;
         margin: 0 auto;
+    }
+}
+
+/* Christmas Fair Announcement Banner */
+:root {
+    --announcement-height: 44px;
+}
+
+.announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--announcement-height);
+    background: var(--gradient-flame);
+    color: var(--white);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-bar-inner {
+    max-width: var(--max-width);
+    width: 100%;
+    padding: 0 3rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.announcement-bar-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.announcement-bar-link:hover,
+.announcement-bar-link:focus-visible {
+    text-decoration: underline;
+}
+
+.announcement-bar-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.25rem;
+    line-height: 1;
+}
+
+.announcement-bar-close:hover,
+.announcement-bar-close:focus-visible {
+    opacity: 0.8;
+}
+
+body.announcement-dismissed .announcement-bar {
+    display: none;
+}
+
+body.announcement-dismissed .navbar {
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        top: calc(var(--nav-height) + var(--announcement-height));
+    }
+
+    body.announcement-dismissed .nav-menu {
+        top: var(--nav-height);
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-bar-link {
+        font-size: 0.78rem;
     }
 }
