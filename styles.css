@@ -2071,3 +2071,54 @@ p {
 .faq-item a {
     color: var(--brand-crimson, #e4002b);
 }
+
+/* Christmas Fair Event Promo */
+.event-promo {
+    padding: var(--section-padding);
+    background: var(--brand-crimson-subtle);
+}
+
+.event-promo-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 380px) 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.event-promo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+}
+
+.event-promo-content h2 {
+    background: var(--gradient-flame);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.event-promo-meta {
+    font-weight: 600;
+    color: var(--brand-neutral-cool);
+    margin-bottom: 0.5rem;
+}
+
+.event-promo-meta i {
+    color: var(--brand-crimson);
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .event-promo-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .event-promo-image {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
