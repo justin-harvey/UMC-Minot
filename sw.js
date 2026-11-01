@@ -1,7 +1,7 @@
 // Service Worker for UMC Minot Website
 // Provides basic caching for offline functionality
 
-const CACHE_NAME = 'umc-minot-v22';
+const CACHE_NAME = 'umc-minot-v23';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -23,6 +23,7 @@ const urlsToCache = [
 
 // Install event - cache resources
 self.addEventListener('install', function(event) {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function(cache) {
@@ -58,6 +59,8 @@ self.addEventListener('activate', function(event) {
                     }
                 })
             );
+        }).then(function() {
+            return self.clients.claim();
         })
     );
 });
