@@ -79,23 +79,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dismissible Christmas Fair Announcement Banner
-document.addEventListener('DOMContentLoaded', function() {
-    const announcementBar = document.getElementById('announcement-bar');
-    const announcementClose = document.getElementById('announcement-bar-close');
-
-    if (announcementBar && announcementClose) {
-        if (sessionStorage.getItem('announcementDismissed') === 'true') {
-            document.body.classList.add('announcement-dismissed');
-        }
-
-        announcementClose.addEventListener('click', function() {
-            document.body.classList.add('announcement-dismissed');
-            sessionStorage.setItem('announcementDismissed', 'true');
-        });
-    }
-});
-
 // Active Navigation Link Highlighting
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section[id]');
