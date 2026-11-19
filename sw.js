@@ -1,7 +1,7 @@
 // Service Worker for UMC Minot Website
 // Provides basic caching for offline functionality
 
-const CACHE_NAME = 'umc-minot-v24';
+const CACHE_NAME = 'umc-minot-v25';
 const urlsToCache = [
     '/',
     '/index.html',
