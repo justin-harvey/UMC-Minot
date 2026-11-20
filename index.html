@@ -76,6 +76,7 @@
                 <a href="#home" class="nav-link active" aria-current="page">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#worship" class="nav-link">Worship</a>
+                <a href="christmas.html" class="nav-link nav-link-christmas">Christmas</a>
                 <a href="#connect" class="nav-link">Connect</a>
                 <a href="#serve" class="nav-link">Serve</a>
                 <a href="#resources" class="nav-link">Resources</a>
@@ -92,6 +93,17 @@
 
     <!-- Enhanced Hero Section with Better Accessibility -->
     <main id="main-content">
+    <!-- Advent / Christmas banner -->
+    <aside class="holiday-banner" role="note" aria-label="Christmas services at Minot UMC">
+        <a href="christmas.html" class="holiday-banner-link">
+            <span class="holiday-banner-icon" aria-hidden="true"><i class="fas fa-star"></i></span>
+            <span class="holiday-banner-text">
+                <strong>Join us for Christmas!</strong>
+                Christmas Eve worship Thursday, Dec 24 at 6:00 PM &middot; Blue Christmas Mon, Dec 21 at 5:00 PM
+            </span>
+            <span class="holiday-banner-cta">See all services <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+    </aside>
     <section id="home" class="hero" role="banner" aria-label="Welcome to UMC Minot">
         <div class="hero-overlay" aria-hidden="true"></div>
         <header class="hero-content">
@@ -383,6 +395,11 @@
                 </article>
 
                 <article class="faq-item">
+                    <h3>When are the Christmas services at Minot UMC?</h3>
+                    <p>Our <strong>Christmas Eve</strong> worship is <strong>Thursday, December 24, 2026 at 6:00 PM</strong> and is family-friendly, with children warmly welcome. We also hold a quieter <strong>Blue Christmas</strong> service on <strong>Monday, December 21, 2026 at 5:00 PM</strong> for anyone finding the holidays hard. Both are at 142 Minot Ave and all are welcome. <a href="christmas.html">See all Christmas services &rarr;</a></p>
+                </article>
+
+                <article class="faq-item">
                     <h3>Where is the church located?</h3>
                     <p>We are at <strong>142 Minot Ave, Minot, ME 04258</strong>. The building has an accessible entrance. You can reach us at <a href="tel:+12077839097">(207) 783-9097</a> or <a href="mailto:minotumc@gmail.com">minotumc@gmail.com</a>.</p>
                 </article>
@@ -575,6 +592,14 @@
             },
             {
                 "@type": "Question",
+                "name": "When are the Christmas services at United Methodist Church of Minot?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Christmas Eve worship is Thursday, December 24, 2026 at 6:00 PM and is family-friendly, with children welcome. A quieter Blue Christmas service is held Monday, December 21, 2026 at 5:00 PM for anyone finding the holidays hard. Both services are at 142 Minot Ave, Minot, Maine, and all are welcome."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "Where is the United Methodist Church of Minot located?",
                 "acceptedAnswer": {
                     "@type": "Answer",
@@ -621,6 +646,62 @@
             clip: rect(0, 0, 0, 0);
             white-space: nowrap;
             border: 0;
+        }
+
+        /* Advent / Christmas banner */
+        .holiday-banner {
+            margin-top: var(--nav-height);
+            background: linear-gradient(135deg, var(--brand-deep-purple, #5a4b6b) 0%, var(--brand-crimson, #e4002b) 100%);
+        }
+
+        .holiday-banner-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.25rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0.85rem 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .holiday-banner-icon {
+            color: var(--brand-gold, #d4af37);
+            font-size: 1.1rem;
+        }
+
+        .holiday-banner-text {
+            font-size: 0.98rem;
+            line-height: 1.4;
+        }
+
+        .holiday-banner-text strong {
+            color: var(--brand-gold, #d4af37);
+            margin-right: 0.35rem;
+        }
+
+        .holiday-banner-cta {
+            font-weight: 700;
+            white-space: nowrap;
+            border-bottom: 2px solid var(--brand-gold, #d4af37);
+            padding-bottom: 1px;
+        }
+
+        .holiday-banner-link:hover .holiday-banner-cta {
+            border-bottom-color: #fff;
+        }
+
+        .nav-link-christmas {
+            color: var(--brand-crimson) !important;
+            font-weight: 700;
+        }
+
+        /* The banner sits below the fixed nav, so the hero no longer needs to clear it here */
+        .holiday-banner + .hero {
+            scroll-margin-top: var(--nav-height);
         }
 
         .phone-link {

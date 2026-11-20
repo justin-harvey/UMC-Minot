@@ -9,6 +9,8 @@
 - **Phone:** (207) 783-9097
 - **Email:** minotumc@gmail.com
 - **Sunday Worship:** 10:00 AM – 11:15 AM, every Sunday
+- **Christmas Eve 2026:** Thursday, December 24 at 6:00 PM (family-friendly, in person)
+- **Blue Christmas 2026:** Monday, December 21 at 5:00 PM (quiet, reflective service for those finding the holidays hard)
 - **Cost:** Free and open to the public; all are welcome
 - **Accessibility:** Wheelchair-accessible entrance; children welcome
 - **Denomination:** United Methodist Church (UMC)
@@ -22,6 +24,7 @@ Worship blends traditional and contemporary music with meaningful prayer and a s
 ## Pages
 
 - [Home](https://umc-minot-maine.netlify.app/): Welcome, worship times, about, and church history
+- [Advent & Christmas](https://umc-minot-maine.netlify.app/christmas.html): Christmas Eve and Blue Christmas service times, what to expect for first-time guests, and how to connect
 - [Event Calendar](https://umc-minot-maine.netlify.app/calendar.html): Upcoming worship services, events, and activities
 - [Bible Study](https://umc-minot-maine.netlify.app/bible-study.html): Devotionals and study guides for spiritual growth
 - [Pastoral Care & Prayer](https://umc-minot-maine.netlify.app/pastoral-care.html): Prayer requests, pastoral support, and the Prayer Wall
