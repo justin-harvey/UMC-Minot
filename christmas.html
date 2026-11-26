@@ -390,17 +390,11 @@
             margin: 0 auto;
         }
 
-        /* Civic grid texture (from the Civic-Chain brand "landing-grid-overlay"):
-           1px lines on an 18px grid over a warm cream page surface. */
+        /* Christmas paper texture: snowflakes, stars and holly tiled over warm cream. */
         .holiday-content {
-            --civic-grid-size: 1.125rem;
-            --civic-grid-line: rgba(19, 31, 134, 0.05);
             padding: 4rem 0;
-            background-color: #faf3e8;
-            background-image:
-                linear-gradient(to right, var(--civic-grid-line) 1px, transparent 1px),
-                linear-gradient(to bottom, var(--civic-grid-line) 1px, transparent 1px);
-            background-size: var(--civic-grid-size) var(--civic-grid-size);
+            background: #faf3e8 url("images/christmas-paper.svg") repeat;
+            background-size: 160px 160px;
         }
 
         .holiday-content h2 {
