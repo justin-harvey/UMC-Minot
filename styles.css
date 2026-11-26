@@ -147,7 +147,7 @@ p {
 }
 
 .section-header h2 {
-    background: var(--gradient-flame);
+    background: var(--gradient-heading);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -209,7 +209,7 @@ p {
 }
 
 .btn-primary {
-    background: var(--gradient-flame);
+    background: var(--gradient-button);
     color: var(--white);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--button-shadow);
@@ -235,7 +235,7 @@ p {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.18);
     color: var(--white);
     border: 2px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(20px);
@@ -251,6 +251,15 @@ p {
     text-shadow: none;
 }
 
+/* Secondary buttons on light panels need dark text, not white */
+.cta-section .btn-secondary,
+.calendar-cta .btn-secondary {
+    background: var(--white);
+    color: var(--brand-crimson-dark);
+    border-color: var(--brand-crimson);
+    text-shadow: none;
+}
+
 .btn-secondary:active {
     transform: translateY(0);
     background: rgba(255, 255, 255, 0.9);
@@ -258,13 +267,13 @@ p {
 
 .btn-outline {
     background: var(--gradient-button-subtle);
-    color: var(--brand-crimson);
+    color: var(--brand-crimson-dark);
     border: 1px solid var(--brand-crimson);
     backdrop-filter: blur(10px);
 }
 
 .btn-outline:hover {
-    background: var(--gradient-flame);
+    background: var(--gradient-button);
     color: var(--white);
     border-color: transparent;
     transform: translateY(-2px);
@@ -384,10 +393,7 @@ p {
 
 .nav-link:hover,
 .nav-link.active {
-    background: var(--gradient-flame);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--brand-crimson-dark);
 }
 
 .nav-link::after {
@@ -562,7 +568,7 @@ p {
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(15px) saturate(180%);
     -webkit-backdrop-filter: blur(15px) saturate(180%);
     padding: 1.25rem;
@@ -578,7 +584,7 @@ p {
 
 .info-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.34);
     box-shadow: var(--shadow-medium);
 }
 
@@ -606,10 +612,9 @@ p {
 }
 
 .info-card p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin: 0;
     color: white;
-    opacity: 0.9;
 }
 
 /* Church Gallery Carousel */
@@ -1354,7 +1359,7 @@ p {
 }
 
 .footer-section h4 {
-    color: var(--brand-crimson);
+    color: var(--brand-crimson-on-dark);
     margin-bottom: 1rem;
     font-family: var(--font-body);
     font-weight: 600;
@@ -1382,7 +1387,7 @@ p {
 .footer-logo-main {
     font-family: var(--font-heading);
     font-size: 1.4rem;
-    color: var(--brand-crimson-light);
+    color: var(--brand-crimson-on-dark);
     font-weight: 400;
 }
 
@@ -1634,7 +1639,7 @@ p {
     }
 
     .info-card p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -1711,52 +1716,6 @@ p {
     }
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --white: #1a1a1a;
-        --light-gray: #2d2d2d;
-        --medium-gray: #a0a0a0;
-        --dark-gray: #e0e0e0;
-        --deep-purple: #e0e0e0;
-        --glass-white: rgba(42, 42, 42, 0.95);
-        --glass-dark: rgba(255, 255, 255, 0.1);
-        --gradient-card: linear-gradient(145deg, rgba(42, 42, 42, 0.9) 0%, rgba(42, 42, 42, 0.8) 100%);
-    }
-
-    .connect-card,
-    .serve-card,
-    .resource-card,
-    .service-card {
-        background: #2d2d2d;
-        border-color: rgba(228, 0, 43, 0.2);
-    }
-
-    .hero {
-        background: linear-gradient(135deg, rgba(228, 0, 43, 0.9) 0%, rgba(212, 175, 55, 0.9) 100%);
-    }
-
-    /* Footer dark mode - ensure it stays dark with white text */
-    .footer {
-        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
-        color: #ffffff !important;
-    }
-
-    .footer-section p,
-    .footer-section address,
-    .footer-section address p,
-    .footer-section li,
-    .footer-section a,
-    .footer-bottom,
-    .footer-bottom p {
-        color: #ffffff !important;
-    }
-
-    .footer-section h4 {
-        color: var(--brand-crimson) !important;
-    }
-}
-
 /* Additional Utility Classes */
 .text-gradient {
     background: var(--gradient-flame);
@@ -1770,6 +1729,15 @@ p {
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hero info cards sit on red: tint them darker so white text stays readable */
+.info-card.glass-effect {
+    background: rgba(0, 0, 0, 0.28);
+}
+
+.info-card.glass-effect:hover {
+    background: rgba(0, 0, 0, 0.34);
 }
 
 .hover-lift {
@@ -2037,7 +2005,7 @@ p {
 /* ===== FAQ Section (GEO / answer-friendly content) ===== */
 .faq {
     padding: 5rem 0;
-    background: var(--brand-neutral-warm, #faf8f5);
+    background: #faf8f5;
 }
 
 .faq-list {

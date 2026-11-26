@@ -111,7 +111,11 @@
   --gradient-hero: linear-gradient(135deg, rgba(228, 0, 43, 0.95) 0%, rgba(212, 175, 55, 0.85) 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
   --gradient-text: linear-gradient(45deg, var(--brand-crimson) 30%, var(--brand-gold) 70%);
-  --gradient-button-hover: linear-gradient(135deg, var(--brand-crimson-dark) 0%, var(--brand-gold-dark) 100%);
+  --gradient-button-hover: linear-gradient(135deg, var(--brand-crimson-dark) 0%, var(--brand-crimson-deeper) 100%);
+  /* Readable fills/text: white text on buttons, red text on dark footers, gradient headings on white */
+  --gradient-button: linear-gradient(135deg, var(--brand-crimson) 0%, var(--brand-crimson-dark) 100%);
+  --gradient-heading: linear-gradient(135deg, var(--brand-crimson) 0%, var(--brand-gold-dark) 100%);
+  --brand-crimson-on-dark: #ff8fa3;
   --gradient-button-subtle: linear-gradient(135deg, rgba(228, 0, 43, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
 
   /* Warm Flame Effect Gradients */
@@ -124,7 +128,8 @@
   /* ================================
      NEUTRAL COLOR SYSTEM
      ================================ */
-  --white: #ffffff;\n  --neutral-white: #ffffff;
+  --white: #ffffff;
+  --neutral-white: #ffffff;
   --neutral-gray-50: #f8f9fa;
   --neutral-gray-100: #f1f3f4;
   --neutral-gray-200: #e9ecef;
@@ -393,42 +398,6 @@
   --nav-link-active-color: transparent;
   --nav-link-active-background: var(--gradient-text);
   --nav-link-hover-color: var(--brand-crimson);
-}
-
-/* ================================
-   DARK MODE ADAPTATIONS
-   ================================ */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Invert neutral colors */
-    --neutral-white: #1a1a1a;
-    --neutral-gray-50: #2d2d2d;
-    --neutral-gray-100: #333333;
-    --neutral-gray-600: #a0a0a0;
-    --neutral-gray-700: #e0e0e0;
-    --neutral-gray-800: #f0f0f0;
-    --neutral-gray-900: #ffffff;
-
-    /* Adjust crimson colors for dark mode */
-    --brand-crimson-light: #ff6b8a;
-    --brand-crimson-lighter: #4a1a28;
-    --brand-crimson-subtle: #2d1419;
-
-    /* Adjust gold colors for dark mode */
-    --brand-gold-light: #ffd700;
-    --brand-gold-subtle: #332b1a;
-
-    /* Update charcoal for dark mode */
-    --brand-charcoal: #e0e0e0;
-
-    /* Adjust glass effects */
-    --glass-white: rgba(42, 42, 42, 0.95);
-    --glass-dark: rgba(255, 255, 255, 0.1);
-
-    /* Update component backgrounds */
-    --card-background: #2d2d2d;
-    --nav-background: rgba(42, 42, 42, 0.95);
-  }
 }
 
 /* ================================
