@@ -359,8 +359,11 @@
     <!-- Page-specific styles -->
     <style>
         .page-header {
-            padding: calc(var(--nav-height) + 4rem) 0 4rem;
-            background: linear-gradient(135deg, var(--brand-deep-purple, #5a4b6b) 0%, var(--brand-crimson, #e4002b) 100%);
+            padding: calc(var(--nav-height) + 5rem) 0 5rem;
+            background:
+                linear-gradient(rgba(20, 14, 10, 0.55), rgba(20, 14, 10, 0.65)),
+                url("images/christmas-hero.jpg") center 55% / cover no-repeat,
+                #2b1f17;
             color: white;
             text-align: center;
         }
@@ -617,10 +620,14 @@
         /* Bottom CTA */
         .holiday-cta {
             text-align: center;
-            padding: 3rem;
-            background: linear-gradient(135deg, var(--brand-deep-purple, #5a4b6b) 0%, var(--brand-crimson, #e4002b) 100%);
+            padding: 4rem 3rem;
+            background:
+                linear-gradient(rgba(20, 14, 10, 0.6), rgba(20, 14, 10, 0.6)),
+                url("images/christmas-banner.jpg") center / cover no-repeat,
+                #2b1f17;
             border-radius: var(--border-radius-large);
             color: white;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .holiday-cta h2 {
@@ -628,6 +635,7 @@
         }
 
         .holiday-cta p {
+            color: white;
             font-size: 1.1rem;
             margin-bottom: 2rem;
             max-width: 600px;
