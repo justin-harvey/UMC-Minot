@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+  <!-- Original seamless Christmas paper tile for minot UMC: snowflakes, stars, holly. -->
+  <defs>
+    <g id="arm">
+      <path d="M0 0V-11M-3-8.5 0-6 3-8.5M-2-4 0-2.5 2-4"/>
+    </g>
+    <g id="snowflake" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <use xlink:href="#arm"/>
+      <use xlink:href="#arm" transform="rotate(60)"/>
+      <use xlink:href="#arm" transform="rotate(120)"/>
+      <use xlink:href="#arm" transform="rotate(180)"/>
+      <use xlink:href="#arm" transform="rotate(240)"/>
+      <use xlink:href="#arm" transform="rotate(300)"/>
+    </g>
+    <polygon id="star" points="0,-6 1.53,-2.1 5.71,-1.85 2.47,0.8 3.53,4.85 0,2.6 -3.53,4.85 -2.47,0.8 -5.71,-1.85 -1.53,-2.1"/>
+    <g id="holly">
+      <path fill="#3f6b4a" d="M0 0C3-4 8-5 13-3C10-2 9 1 6 1C4 1 2 0 0 0Z" transform="rotate(-20)"/>
+      <path fill="#3f6b4a" d="M0 0C-3-4-8-5-13-3C-10-2-9 1-6 1C-4 1-2 0 0 0Z" transform="rotate(20)"/>
+      <circle fill="#b3243a" cx="-2" cy="2.5" r="2.2"/>
+      <circle fill="#b3243a" cx="2.3" cy="2.8" r="2.2"/>
+      <circle fill="#b3243a" cx="0" cy="-0.8" r="2.2"/>
+    </g>
+  </defs>
+  <g opacity="0.32">
+    <use xlink:href="#snowflake" stroke="#b3243a" transform="translate(30 34)"/>
+    <use xlink:href="#snowflake" stroke="#b3243a" transform="translate(136 118) scale(.7)"/>
+    <use xlink:href="#star" fill="#c9a227" transform="translate(112 26)"/>
+    <use xlink:href="#star" fill="#c9a227" transform="translate(44 118) scale(.75)"/>
+    <use xlink:href="#holly" transform="translate(92 86)"/>
+    <use xlink:href="#holly" transform="translate(18 150) scale(.75) rotate(25)"/>
+    <g fill="#c9a227">
+      <circle cx="72" cy="52" r="1.6"/>
+      <circle cx="12" cy="84" r="1.4"/>
+      <circle cx="142" cy="62" r="1.6"/>
+      <circle cx="84" cy="140" r="1.4"/>
+      <circle cx="148" cy="10" r="1.2"/>
+    </g>
+  </g>
+</svg>
